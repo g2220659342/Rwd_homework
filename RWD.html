@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undertale遊戲介紹</title>
+    <link rel="stylesheet" type="text/css" href="rwd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+         #myAudio {
+    display: none;
+  }
+  
+    </style>
+</head>
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+
+    
+</script>
+<body>
+    <audio id="myAudio" autoplay>
+        <source src="music/Undertale OST 013 - Home (Music Box).mp3" type="audio/mp3">
+      </audio>
+    <section class="headerNav">
+        <div class="container">
+            <h1 class="logo">
+                
+                
+            </h1>
+            
+            <i class="fas fa-bars" id="mobileMenu"></i>
+
+            <ul class="mainNav">
+                </li>
+                <li class="navItem">
+                    <a href="https://store.steampowered.com/app/391540/Undertale/" target="_blank"><img src="icon.png" alt="" style="width: 50%;height: auto;"></a>
+                </li>     
+                <li class="navItem">
+                    <a href="#">導覽列</a>
+                </li>
+                
+                <li class="navItem exercise">
+                    <a href="#">
+                        更多
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="exerciseList">
+                        <li class="exerciseForList">
+                            <a href="http://127.0.0.1:5500/RWD%E4%BD%9C%E6%A5%AD/RWD.html">首頁</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="http://127.0.0.1:5500/RWD%E4%BD%9C%E6%A5%AD/RWD2.html">主要角色</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="http://127.0.0.1:5500/RWD%E4%BD%9C%E6%A5%AD/RWD3.html">資料來源</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+            </ul>
+            <div class="userAccount">
+                <a href="#">
+                    <i class="fas fa-user-circle"></i>
+                    何國竹  B11156041
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="wrap" style="text-align: center;">
+        <img src="picture1.jpg" alt="" style="width: 100%;height: auto;">
+         <p style="font-size: 20px;"><span>《Undertale》</span>（又譯作「地域傳說」、「傳說之下」、「地下傳說」）<br>是托比·福克斯（Toby Fox，id為tobyfox）獨立開發、發行的一款角色扮演遊戲。</p>
+         <img src="picture2.gif" alt=""style="width: 100%;height: auto;">
+         <p style="font-size: 20px;">在遊戲內玩家要控制一位掉入地底世界，被魔法屏障隔開的人類孩子。<br>玩家的任務是要讓人類孩子回到地表，探索充滿城鎮和洞穴的地下世界，並在旅途中解開無數的謎題。</p>
+         <img src="picture3.webp" alt=""style="width: 100%;height: auto;">
+         <p style="font-size: 20px;">遊戲其特色在於特殊的戰鬥系統，玩家必須閃避對手的彈幕攻擊，可以選擇仁慈（mercy）或行動（act）或攻擊（fight）他們。這些選擇會影響遊戲後面的對話、人物、故事和結局。</p>
+         <img src="picture4.png" alt=""style="width: 100%;height: auto;">
+         <p style="font-size: 20px;">該遊戲在上市後備受評論家的好評，並稱讚遊戲中的幽默元素、直觀的戰鬥系統、音樂獨創性以及劇情中與角色深刻的情感連結。最終遊戲銷售超過一百萬份，被提名多項榮譽和獎項提名。</p>
+      </div>
+     
+</body>
+<script>
+    var mobileMenu = document.getElementById("mobileMenu");
+    var mainNav = document.querySelector(".mainNav");
+    var headerNav = document.querySelector(".headerNav");
+    var audio = document.getElementById("myAudio");
+    audio.volume = 0.2; // 设置音量，范围从 0（静音）到 1（最大音量）
+    mobileMenu.addEventListener("click", function() {
+        mainNav.classList.toggle("mainNavShow");
+        headerNav.classList.toggle("headerNavShow");
+    });
+    
+    // $("#mobileMenu").click(function() {
+    //     $(".mainNav").toggleClass("mainNavShow");
+    //     $(".headerNav").toggleClass("headerNavShow");
+    // });
+</script>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undertale遊戲介紹</title>
+    <link rel="stylesheet" type="text/css" href="rwd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #StopMusic {
+      position: fixed;
+      bottom: 40px; /* 上移位置 */
+      right: 20px;
+      display: none;
+    }
+    </style>
+</head>
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+
+    
+</script>
+<body>
+
+    <section class="headerNav">
+        <div class="container">
+            <h1 class="logo">
+    
+                
+            </h1>
+            
+            <i class="fas fa-bars" id="mobileMenu"></i>
+
+            <ul class="mainNav">
+                </li>
+                <li class="navItem">
+                    <a href="https://store.steampowered.com/app/391540/Undertale/"target="_blank"><img src="icon.png" alt="" style="width: 50%;height: auto;"></a>
+                </li>     
+                <li class="navItem exercise">
+                    <a href="#">
+                        導覽列
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="exerciseList">
+                        <li class="exerciseForList">
+                            <a href="#frisk">Frisk</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="#Toriel">Toriel</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="#sans">Sans</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="#Papyrus">Papyrus</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="#Undyne">Undyne</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="#Alphys">Alphys</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="#Mettaton">Mettaton</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="#Asgore Dreemurr">Asgore Dreemurr</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="#Flowey">Flowey</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="#Asriel Dreemurr">Asriel Dreemurr</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="#Chara">Chara</a>
+                        </li>
+                    </ul>
+                    
+                <li class="navItem exercise">
+                    <a href="#">
+                        更多
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="exerciseList">
+                        <li class="exerciseForList">
+                            <a href="http://127.0.0.1:5500/RWD%E4%BD%9C%E6%A5%AD/RWD.html">首頁</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="http://127.0.0.1:5500/RWD%E4%BD%9C%E6%A5%AD/RWD2.html">主要角色</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="http://127.0.0.1:5500/RWD%E4%BD%9C%E6%A5%AD/RWD3.html">資料來源</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+            </ul>
+            <div class="userAccount">
+                <a href="#">
+                    <i class="fas fa-user-circle"></i>
+                    何國竹  B11156041
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="wrap" style="text-align: center;">
+        <img id="playImage" id="frisk" src="frisk.jpg" alt="Play Image" style="width: 100%;height: auto;">
+         <p style="font-size: 20px;">
+            <audio id="myAudio" controls>
+                <source src="music/Undertale OST 004 - Fallen Down.mp3" type="audio/mp3">
+              </audio>
+       <br>弗里斯克（<span  style="color: rgb(252, 84, 84);">Frisk</span>，フリスク） 
+        <br>本作主角，性別不明，是由玩家所操作，第八位墜落的人類，形象為膚色偏黃，穿著紫藍相間橫條紋上衣的孩子，大約5、6歲擁有<span style="color: red;">「決心」(Determination)</span>，能使用<span style="color: brown;">存檔/讀檔/重置</span>等能力。
+        <br>在遊戲中，<span style="color: rgb(252, 84, 84);">Frisk</span>本身的性格並不明顯，總是保持面無表情的樣子行動，僅能透過對話中來確認他的性格，（當敵人説⋯時，代表他在聆聽Frisk的話語），並會依據於玩家的操作而展現出不同的行為。
+        <br>若將墜落的人類角色取名為「<span style="color: rgb(252, 84, 84);">Frisk</span>」時，系統會警告說「這個名字會導致你如墮地獄。無論如何都要繼續嗎？」，確認後將會開啟困難模式（劇情僅到廢墟結束）。
+        <br>紅色靈魂在遊戲中並沒有特別交代是何種特性，而<span style="color: red;">決心（Determination）</span>是所有人類靈魂共通的特性，由於主角<span style="color: rgb(252, 84, 84);">Frisk</span>的靈魂為紅色，遊戲中亦時常出現<span style="color: red;">「決心」</span>一詞。遊戲失敗時也會出現。
+        </p>
+         <img id="Toriel" src="toriel.jpg" alt=""style="width: 100%;height: auto;">
+         <p style="font-size: 20px;">
+            <audio id="myAudio" controls>
+                <source src="music/Undertale OST 014 - Heartache.mp3" type="audio/mp3">
+              </audio>
+              <br>托麗爾（<span  style="color: blueviolet;">Toriel</span>，トリエル）
+        <br>穿著紫色長袍、猶如母親般溫柔慷慨、有著山羊外貌的怪物，是玩家在遊戲中遇到的第二個角色，非常關心墜落到地下世界的人類。
+        <br>引導玩家進行地下世界歷險的基本教學，但實際上希望其一直待在起始的廢墟，偶爾也會顯露出嚴肅的一面，如要證明主角有足夠的力量來保護自己時，則會使用火球攻擊進行戰鬥，然而防禦則會在多次攻擊後大幅減弱。注如果墜落之子血量低於2以下會手下留情，但是仍然可能失手殺死墜落之子。
+        <br>隨著劇情的推展可知，她過去曾是地下王國的王后。在親生兒子<span style="color: rgb(139, 214, 27);">Asriel</span>被人類殺害後，不同意國王<span style="color: rgb(246, 246, 0);">Asgore</span>收集人類靈魂的計劃而黯然離開。並來到起始的廢墟從此與世隔絕，期望收留與保護日後掉入地下世界的人類，可惜總是事與願違。
+        <br>在長年隱居的生活中，僅與廢墟的怪物和<span style="color: rgb(9, 211, 211);">Sans</span>相處，很少現存怪物知道其存在。電話亦只有最傳統的通話功能。居處格局跟國王大同小異。若將墜落的人類角色取名為'「<span style="color: blueviolet;">Toriel</span>」時，系統會說「我覺得你應該想一個屬於自己的名字，我的孩子。」
+        </p>
+         <img id="sans" src="sans.jpg" alt=""style="width: 100%;height: auto;">
+         <p style="font-size: 20px;">
+            <audio id="myAudio" controls>
+                <source src="music/Undertale OST 100 - Megalovania.mp3" type="audio/mp3">
+              </audio>
+       <br>衫斯（<span  style="color: rgb(9, 211, 211);">Sans</span>，サンズ）
+            <br>穿著藍色連帽外套和粉紅色拖鞋、身材矮胖的骷髏怪物，十分懶惰，經常睡覺。此外也是<span style="color: orange;">Papyrus</span>兄弟（哥哥），十分疼愛弟弟。
+            <br>皇家衛隊成員，似乎沒有將其職責放在心上，卻總是能剛好達到業績門檻。總是想著開玩笑或說冷笑話，最拿手的是與「骷髏」一詞相關的雙關笑話，但認真戰鬥時十分殘酷且強大。
+            神出鬼沒，能穿越空間限制到不同地方,亦能感知玩家的存在，知道玩家重置與存檔的事。與Toriel約定要保護墜落的人類。
+            <br>血量，防禦力與攻擊力皆為1。系統顯示為:「最弱的怪物。任何人都能輕易擊敗。」但他在屠殺路線中卻是BOSS角色，亦是唯一懂得迴避主角攻擊的怪物。
+            <br>擁有特殊能力「業報懲罰」（Karma Retribution，簡稱KR）玩家受到傷害後會像中毒一樣受到持續傷害以及取消玩家受傷後的無敵時間（Invincibility Frame），並以骨頭（白色或淺藍色）跟引力（將玩家靈魂變為藍色，藉此改變重力）攻擊，亦有 Gaster Blaster（加斯特衝擊波）等攻擊手段。
+            <br>他在戰鬥中會同時對墜落之子提及自己的背景，譬如他早已慣於被困在地下世界的這條時間線，多次努力仍然失敗，因此失去了追隨目標的決心。
+            若將墜落的人類角色取名為「<span style="color: rgb(9, 211, 211);">Sans</span>」時，系統會說「沒門。」
+        </p>
+         <img id="Papyrus" src="papyrus.jpg" alt=""style="width: 100%;height: auto;">
+         <p style="font-size: 20px;">
+            <audio id="myAudio" controls>
+                <source src="music/Undertale OST 024 - Bonetrousle.mp3" type="audio/mp3">
+              </audio>
+       <br>帕派瑞斯（<span  style="color: orange;">Papyrus</span>，パピルス）
+            <br>外型及性格類似唐吉軻德、穿著鎧甲及紅色披風、高大纖瘦的骷髏，<span style="color: rgb(9, 211, 211);">Sans</span>的兄弟（弟弟），在戰鬥時會以骨頭（白色與淺藍色）進行攻擊。
+            <br>為了成為其夢想中的皇家衛隊成員而努力狩獵著人類。然而其善良和單純的性格，使守衛隊隊長<span style="color: rgb(30, 97, 160);">Undyne</span>不希望他上戰場，於是改為教導他烹飪，雖然<span style="color: rgb(30, 97, 160);">Undyne</span>並不擅長料理。
+            <br>因傳承<span style="color: rgb(30, 97, 160);">Undyne</span>的料理技術，在故事中則表示正在學習烹調義大利麵，由<span style="color: rgb(9, 211, 211);">Sans</span>對主角的談話間可得知，他的料理技術還沒到可以食用的境界。
+            <br>若將墜落的人類角色取名為「<span style="color: orange;">Papyrus</span>」時（由於名字最多只允許六個字母），系統會說「我准了！！！」
+        
+        </p>
+        <img id="Undyne" src="Undyne.webp" alt=""style="width: 100%;height: auto;">
+        <p style="font-size: 20px;">
+            <audio id="myAudio" controls>
+                <source src="music/Undertale OST 046 - Spear of Justice.mp3" type="audio/mp3">
+              </audio>
+       <br>安黛因（<span  style="color: rgb(30, 97, 160);">Undyne</span>，アンダイン）
+            <br>地下王國的守衛隊隊長，留著紅色馬尾的女性藍色魚人，經常穿著鎧甲。底下是黑色背心及牛仔褲，非值勤時間外出穿著淺色毛衣洋裝及深色外套。
+            <br>凡事都認真和強硬執行，少數知道和使用決心戰鬥的怪物。初次登場穿著露出單眼的鎧甲，在各地中擁有相當的人氣，尤其以怪物小孩最為狂熱。也相當重視和朋友的情誼，其中<span style="color: orange;">Papyrus</span>糟糕透頂的廚藝便是得到其真傳，亦是這性格使之受國王<span style="color: rgb(246, 246, 0);">Asgore</span>賞識。
+            <br>於一次訓練後隨行中結識<span style="color: rgb(222, 215, 143);">Alphys</span>，漸對對方產生感情，相信其提供的ACG漫畫作品乃人類文明的正史。雖對人類文明感到佩服，但仍堅決執行國王<span style="color: rgb(246, 246, 0);">Asgore</span>收集人類靈魂的計劃。
+            <br>使用青色的長矛攻擊，攻擊主角時會讓其靈魂變成綠色（代表盾牌，只能防守一個方向，並且不能逃跑），在完美路線中，隨著主角的行動也使她對於人類漸漸改觀，並因此與主角成為朋友，也會請主角將約會的信送至給<span style="color: rgb(222, 215, 143);">Alphys</span>。
+            <br>無論哪一種路線，她都不會接受主角殺害任何一名怪物，在<span style="color: rgb(134, 6, 6);">屠殺路線</span>中會藉由玩家的攻擊成為<span style="color: rgb(70, 225, 173);">Undyne the undying</span>，以決心改變自身形態，系統顯示：「<span style="color: rgb(70, 225, 173);">真正的女英雄翩然降臨。</span>」。
+            <br>若將墜落的人類角色取名為「<span style="color: rgb(30, 97, 160);">Undyne</span>」時，系統會說「找自己的名字去！」
+       
+       </p>
+       <img id="Alphys" src="alphys.jpg" alt=""style="width: 100%;height: auto;">
+       <p style="font-size: 20px;">
+        <audio id="myAudio" controls>
+            <source src="music/Undertale - Alphys Takes Action (Extended Version).mp3" type="audio/mp3">
+          </audio>
+   <br>艾菲斯（<span  style="color: rgb(222, 215, 143);">Alphys</span>，アルフィー）
+        <br>戴著圓形眼鏡、穿著白色實驗衣，黃色的女性蜥蜴或是恐龍怪物，是地下王國的皇家科學家。精通電子儀器。
+        <br>當主角從遺跡出來後，直到抵達其實驗室前都一直用自製的鏡頭觀察墜落之子（部分鏡頭可在地圖中調查），並製造了娛樂機器人<span style="color: rgb(73, 0, 142);">Mettaton</span>。在國王<span style="color: rgb(246, 246, 0);">Asgore</span>允許下，對於靈魂及決心進行研究，該研究牽涉和平路線的關鍵劇情，亦造就她凡事欠缺信心，充滿罪惡感和不安的性格，直到<span style="color: rgb(30, 97, 160);">Undyne</span>和主角先後相處後，狀況才稍微好轉。
+        <br>過去經常到瀑布底下的垃圾堆，撿拾來自人類世界的物品，也因此成為一位御宅族，家中藏著撿來的動漫卡帶和漫畫書，對貓耳娘有獨特的喜好。
+        <br>若將墜落的人類角色取名為「<span style="color: rgb(222, 215, 143);">Alphys</span>」時，系統會說「別-別這樣做。」。但如果取名為「<span style="color: rgb(222, 215, 143);">Alphy</span>」時系統會說「呃....行？」
+      
+      </p>
+      <img  id="Mettaton" src="mett.jpg" alt=""style="width: 100%;height: auto;">
+      <p style="font-size: 20px;">
+        <audio id="myAudio" controls>
+            <source src="music/Undertale Ost 099 - Power of -NEO-.mp3" type="audio/mp3">
+          </audio>
+   <br>鎂塔頓（<span style="color: rgb(73, 0, 142);">Mettaton</span>，メタトン）
+        <br>由Alphys製造的娛樂用機器人，外型為以單輪移動的金屬長方體，有兩個機械手臂，前方控制面板上有二十格燈號及四個旋鈕。是遊戲中少數有語音的角色。會在特定情況變為Mettaton EX（中立、完美路線）和Mettaton Neo（屠殺路線）。
+        <br>是一個充滿自信和魅力的電視主持人，在地下世界主持及製作大部分的電視節目，也經營食品加工業和酒店業，以MTT作為商標。最早是在<span style="color: rgb(246, 246, 0);">Asgore</span>要求之下以獵殺人類的目的製造，但在本人意願下加入娛樂用途。在遇到主角為時，會臨時製作以獵殺主角為主題的實境節目。遊戲中多次暗示其本為Napstablook的鬼魂表親，為了追求娛樂大眾的夢想而離家。
+        <br>若將墜落的人類角色取名為「Metta」、「Mett」或「Mtt」時，系統會說「噢噢噢！！！你是在推廣我的品牌嗎？」
+     
+     </p>
+     <img id="Asgore Dreemurr" src="Asgore.webp" alt=""style="width: 100%;height: auto;">
+     <p style="font-size: 20px;">
+        <audio id="myAudio" controls>
+            <source src="music/Undertale OST - Bergentrückung (Intro)   ASGORE Extended.mp3" type="audio/mp3">
+          </audio>
+    <br>艾斯戈爾·逐夢（<span  style="color: rgb(246, 246, 0);">Asgore Dreemurr</span> ，アズゴア・ドリーマー）
+        <br>地下王國的統治者，有著山羊外貌的怪物，也是系列中最強大的怪物之一。
+        <br>因為兒子<span style="color: rgb(139, 214, 27);">Asriel</span>被人類殺害，而致力於破壞魔法結界，以釋放地下世界怪物，戰鬥中則會使用火球和三叉戟攻擊主角。
+        <br>表面上是執意向人類復仇，實際上和藹可親，心中希望人類和怪物能夠和平共存。但考慮到怪物還需要希望支援生存意志，只好讓所有怪物等著七個人類在地下世界出現，殺死他們收集靈魂，並使用七個靈魂來打破屏障。實際上可以直接與一個人類靈魂融合以穿過屏障，收集到需要的靈魂後，再回來釋放怪物。此舉被<span style="color: blueviolet;">Toriel</span>評為懦弱和虛偽，也是兩人分居的一大原因。
+        <br>在<span style="color: red;">Chara</span>與<span style="color: rgb(139, 214, 27);">Asriel</span>逝世前，與妻子<span style="color: blueviolet;">Toriel</span>經常不顧大眾的眼光，在公開場合親熱。對於命名一事相當不擅長，由他命名的地名、人名經常遭到嘲笑。
+        <br>若將墜落的人類角色取名為「<span style="color: rgb(246, 246, 0);">Asgore</span>」時，系統會說「你不能這樣做。」
+    
+    </p>
+    <img id="Flowey" src="flowey.jpg" alt=""style="width: 100%;height: auto;">
+    <p style="font-size: 20px;">
+        <audio id="myAudio" controls>
+            <source src="music/Undertale OST 003 - Your Best Friend.mp3" type="audio/mp3">
+          </audio>
+   <br>小花（<span  style="color: rgb(230, 230, 126);">Flowey</span>，フラウィ）
+        <br>外型為一朵類似金雀花的黃色小花，是遊戲中少數有語音的角色。於廢墟意圖欺騙並殺死玩家，失敗後開始在地下世界跟蹤墜落之子。
+        <br>為生長於皇宮花園的第一株金色花朵附著<span style="color: rgb(139, 214, 27);">Asriel</span>的意識。在<span style="color: rgb(222, 215, 143);">Alphys</span>的靈魂實驗中，從皇宮取來作為乘載人類與怪物靈魂的容器，注入決心後產生了求生欲。
+        <br>知曉《Undertale》的本質是一款遊戲的事情，能夠從遊戲世界外部接觸玩家及篡改設定，包括重置。除了和平及屠殺路線的重置外，基本上會保留所有時間線的記憶。屠殺路線揭示過去已不斷使用重置能力，使之對世界的一切感到厭倦。但在一次重置後失去能力。（因為玩家進入世界時持有的決心比<span style="color: rgb(230, 230, 126);">Flowey</span>更為強大，所以在玩家（決心）出現時導致<span style="color: rgb(230, 230, 126);">Flowey</span>的能力被剝奪）
+        <br>若將墜落的人類角色取名為「<span style="color: rgb(230, 230, 126);">Flowey</span>」時，系統會說「我已經取了那個名字。」
+   
+   </p>
+   <img  id="Asriel Dreemurr" src="Asrielfinalform.webp" alt=""style="width: 100%;height: auto;">
+   <p style="font-size: 20px;">
+    <audio id="myAudio" controls>
+        <source src="music/Undertale Ost 087 - Hopes and Dreams.mp3" type="audio/mp3">
+      </audio>
+<br>艾斯莉爾·逐夢（<span style="color: rgb(139, 214, 27);">Asriel Dreemurr</span> ，アズリエル・ドリーマー）
+    <br>地城王子，一個溫順、缺乏冒險意識而且友善、喜愛笑話的山羊型怪物，穿著與第一位人類相同的橫條紋上衣及短褲。
+    <br>在<span style="color: red;">Chara</span>死後吸收其靈魂越過結界，前往<span style="color: red;">Chara</span>墜落前生活的村莊，將其遺體放到村庄內的一處花園中。村民誤認是他殺害了<span style="color: red;">Chara</span>，因此遭襲擊而命危。回到皇宮的花床後嚥下最後一口氣、死後散開的灰燼覆蓋在第一株金色花的種子上。之後<span style="color: rgb(222, 215, 143);">Alphys</span>博士在花內注入靈魂，成為靈魂實驗的唯一成功品。
+    <br>在和平路線因<span style="color: rgb(230, 230, 126);">Flowey</span>吸收了人類與大量怪獸的靈魂，得以再次變回真身化作成熟型態。同時重新得到了感情，而此正是主角戰勝他的關鍵。
+    <br>若將墜落的人類角色取名為「<span style="color: rgb(139, 214, 27);">Asriel</span>」時，系統會說「...」。
+  
+  </p>
+  <img id="Chara" src="chara.jpg" alt=""style="width: 100%;height: auto;">
+  <p style="font-size: 20px;">
+    <audio id="myAudio" controls>
+        <source src="music/Megalo Strike Back (Chara fight theme).mp3" type="audio/mp3">
+      </audio>
+<br>卡爾拉（<span  style="color: red;">Chara</span>，(別名：查拉，茶拉等名字，キャラ）    
+    <br>第一位墜落的人類，外表擁有白皙皮膚的兒童，性別不明。穿著綠黃相間的橫條紋上衣，頰上有著紅暈，面帶微笑。同時也是玩家實際命名的角色，真名只會在屠殺路線中揭示，當中牽涉遊戲系統引導的巧妙之處。
+    <br>根據劇情的敘述顯示，<span style="color: red;">Chara</span>被<span style="color: rgb(139, 214, 27);">Asriel</span>發現後帶回皇宮，被<span style="color: rgb(72, 5, 135);">Dreemurr</span>家族收養。之後因和<span style="color: rgb(139, 214, 27);">Asriel</span>之間的秘密計劃，在食用有毒植物後病逝，並藉此和<span style="color: rgb(139, 214, 27);">Asriel</span>的靈魂結合，成為融合體中的裏象。
+    <br><span style="color: rgb(139, 214, 27);">Asriel</span>在此之後突破屏障，將其遺體送回村莊。原定一起殺害6名人類，湊齊7個人類靈魂後破壞結界，使所有怪物重獲自由。
+    <br>但因表象的Asriel拒絕使用力量，而兩人的融合體承受不了人類們的攻擊，在回到地下世界後化作灰燼消逝。此事導致國王打算再次跟人類發起戰爭。<span style="color: red;">Chara</span>在主角掉落後被主角的決心喚醒。在屠殺結局後，玩家將無法以正常途徑，阻止對遊戲的永久性逆變。
+    <br>Toby Fox的推特上向玩家說，有人問應該為主角取甚麼名字，他說：「取你自己的名字。」若將墜落的人類角色取名為「<span style="color: red;">Chara</span>」時，系統會說：「真正的名字。」
+ </p>
+      </div>
+     
+</body>
+<script>
+    var mobileMenu = document.getElementById("mobileMenu");
+    var mainNav = document.querySelector(".mainNav");
+    var headerNav = document.querySelector(".headerNav");
+
+    mobileMenu.addEventListener("click", function() {
+        mainNav.classList.toggle("mainNavShow");
+        headerNav.classList.toggle("headerNavShow");
+    });
+
+    var audio = document.getElementById("myAudio");
+    audio.volume = 0.2;
+    
+
+    // $("#mobileMenu").click(function() {
+    //     $(".mainNav").toggleClass("mainNavShow");
+    //     $(".headerNav").toggleClass("headerNavShow");
+    // });
+</script>
+</html>

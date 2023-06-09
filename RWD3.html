@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undertale遊戲介紹</title>
+    <link rel="stylesheet" type="text/css" href="rwd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+         #myAudio {
+    display: none;
+  }
+  .image-background {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .content {
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      font-size: 24px;
+    }
+    .image-container {
+    position: relative;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    visibility: hidden;
+  }
+  
+  .image-container:hover .image-text {
+    visibility: visible;
+  }
+    </style>
+</head>
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+
+    
+</script>
+<body>
+    
+    <audio id="myAudio" autoplay>
+        <source src="music/Undertale OST_ 071 - Undertale (320 kbps).mp3" type="audio/mp3">
+      </audio>
+    <section class="headerNav">
+        <div class="container">
+            <h1 class="logo">
+                
+                
+            </h1>
+            
+            <i class="fas fa-bars" id="mobileMenu"></i>
+
+            <ul class="mainNav">
+            </li>
+            <li class="navItem">
+                <a href="https://store.steampowered.com/app/391540/Undertale/"target="_blank"><img src="icon.png" alt="" style="width: 50%;height: auto;"></a>
+            </li>     
+            <li class="navItem exercise">
+                <a href="#">
+                    導覽列
+                    <i class="fas fa-caret-down"></i>
+                </a>
+                <ul class="exerciseList">
+                    <li class="exerciseForList">
+                        <a href="https://www.youtube.com/watch?v=s7RRgF5Ve_E&list=PLpJl5XaLHtLX-pDk4kctGxtF4nq6BIyjg" target="_blank">Undertale OST</a>
+                    </li>
+                    <li class="exerciseForList">
+                        <a href="https://zh.wikipedia.org/zh-tw/Undertale" target="_blank">Undertale Wiki</a>
+                   
+                    <li class="exerciseForList">
+                        <a href="https://undertale.com/" target="_blank">Undertale官網</a>
+                    </li> <li class="exerciseForList">
+                        <a href="https://zh.wikipedia.org/zh-tw/%E6%89%98%E6%AF%94%C2%B7%E7%A6%8F%E5%85%8B%E6%96%AF" target="_blank">作者Toby Fox</a>
+                    </li>
+                    <li class="exerciseForList">
+                        <a href="https://twitter.com/tobyfox" target="_blank">作者  Twitter</a>
+                    </li> </li>
+                   
+                </ul>
+                
+            <li class="navItem exercise">
+                <a href="#">
+                    更多
+                    <i class="fas fa-caret-down"></i>
+                </a>
+                <ul class="exerciseList">
+                    <li class="exerciseForList">
+                        <a href="http://127.0.0.1:5500/RWD%E4%BD%9C%E6%A5%AD/RWD.html">首頁</a>
+                    </li>
+                    <li class="exerciseForList">
+                        <a href="http://127.0.0.1:5500/RWD%E4%BD%9C%E6%A5%AD/RWD2.html">主要角色</a>
+                    </li>
+                    <li class="exerciseForList">
+                        <a href="http://127.0.0.1:5500/RWD%E4%BD%9C%E6%A5%AD/RWD3.html">資料來源</a>
+                    </li>
+                </ul>
+                
+            </li>
+        </ul>
+            <div class="userAccount">
+                <a href="#">
+                    <i class="fas fa-user-circle"></i>
+                    何國竹  B11156041
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="image-background">
+        <div class="wrap" style="display: flex; flex-direction: column;">
+          <span style="text-align: center;"><a href="https://undertale.fandom.com/zh/wiki/Undertale%E7%B6%AD%E5%9F%BA?variant=zh-tw" target="_blank"><img src="gif1.gif" alt="" style="width: 800px; height: 200px; object-fit: cover;"></a></span>
+          <div style="display: flex; justify-content: center;">
+            <span><img src="gif2.gif" alt="" style="width: 200px; height: 200px; object-fit: cover;"></span>
+            <span><img src="gif3.gif" alt="" style="width: 200px; height: 200px; object-fit: cover;"></span>
+            <span><img src="gif4.gif" alt="" style="width: 200px; height: 200px; object-fit: cover;"></span>
+            <span><img src="gif5.gif" alt="" style="width: 200px; height: 200px; object-fit: cover;"></span>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <span><img src="gif6.gif" alt="" style="width: 200px; height: 200px; object-fit: cover;"></span>
+            <span><img src="gif7.gif" alt="" style="width: 200px; height: 200px; object-fit: cover;"></span>
+            <span><img src="gif8.gif" alt="" style="width: 200px; height: 200px; object-fit: cover;"></span>
+            <span><img src="gif9.gif" alt="" style="width: 200px; height: 200px; object-fit: cover;"></span>
+          </div>
+        </div>
+      </div>
+     
+</body>
+<script>
+    var mobileMenu = document.getElementById("mobileMenu");
+    var mainNav = document.querySelector(".mainNav");
+    var headerNav = document.querySelector(".headerNav");
+    var audio = document.getElementById("myAudio");
+    audio.volume = 0.2; // 设置音量，范围从 0（静音）到 1（最大音量）
+    mobileMenu.addEventListener("click", function() {
+        mainNav.classList.toggle("mainNavShow");
+        headerNav.classList.toggle("headerNavShow");
+    });
+    
+    // $("#mobileMenu").click(function() {
+    //     $(".mainNav").toggleClass("mainNavShow");
+    //     $(".headerNav").toggleClass("headerNavShow");
+    // });
+</script>
+</html>
